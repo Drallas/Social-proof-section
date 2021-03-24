@@ -40,12 +40,87 @@ body {
 body {
   font-family: var(--spartan);
   font-size: 0.9375rem ;
+  
 }
 
 /* Main Section */
 
-/* Footer */
+.wrapper {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
 
+.grid {
+  display: grid;
+  grid-template-columns: 20.4375rem;
+  grid-template-rows: 13.75rem 16.25rem 48rem;
+  gap: 0px 0px;
+}
+
+.cards__item {
+  max-height: 248px;
+}
+
+
+
+/* Media Query for Desktop */
+@media (min-width: 69rem) {
+  .grid {
+    grid-template-columns: 535px 535px ;
+    grid-template-rows: 266px 266px ;
+    grid-template-areas:
+      "grid__header grid__ratings"
+      "grid__cards grid__cards";
+    gap: 20px 40px;
+    }
+  
+    .ratings {
+      margin-top: 25px;
+    }
+
+  .ratings__rating-1 {
+    margin-left: 0;
+  }
+
+  .ratings__rating-2 {
+    margin-left: 40px;
+  }
+
+  .ratings__rating-3 {
+    margin-left: 80px;
+  }
+
+  .grid__cards {
+    display: flex;
+    width: 1110px;
+    justify-content: center; 
+       
+}
+  .cards {
+    max-width: 350px;
+    max-height: 234px;
+    margin: 0 10px;
+  }
+
+  .cards__card-1 {
+    margin-top: 0px;
+  }
+
+  .cards__card-2 {
+    margin-top: 50px;
+  }
+
+  .cards__card-3 {
+    margin-top: 100px;
+  }
+
+}
+
+
+
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -53,3 +128,5 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
