@@ -52,7 +52,7 @@ body {
     url(/images/bg-pattern-bottom-mobile.svg);
   background-position: left 0rem top 0rem, right 0rem bottom 0rem;
   background-repeat: no-repeat, no-repeat;
-  padding: 75px 24px;
+  padding: 75px 24px 0 24px;
 }
 
 .grid {
@@ -114,9 +114,19 @@ body {
   margin-bottom: 1rem;
 }
 
-.cards__image {
+.cards__item h2, h3 {
+  margin: 0 ;
+  font-size: 1rem;
+}
+
+.card__top {
+    display: flex;
+}
+
+.card__image {
   border-radius: 100px;
   width: 40px;
+  margin: 1rem 0 0 1rem;
 }
 
 /* Media Query for Desktop */
