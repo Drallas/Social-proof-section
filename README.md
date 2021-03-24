@@ -39,9 +39,10 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS
-- JavaScript
-- Add more...
+- CSS Grid and Flexbox using BEM
+- Mobile First approach 
+
+Planning this project before building it, it seems fun to me, to make grid wrapper using flexbox in the bottom row for the card items. In my workflow i first built the mobile layout and responsive desktop as an outline. When those basic layouts where good, I moved on to adding the graphical details. 
 
 ### What I learned
 
