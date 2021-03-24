@@ -106,11 +106,17 @@ body {
 }
 
 .cards__item {
+  text-align: left;
   height: 248px;
   color:hsl(0, 0%, 100%);
   border-radius: 8px;
   background-color: var(--very-dark-magenta);
   margin-bottom: 1rem;
+}
+
+.cards__image {
+  border-radius: 100px;
+  width: 40px;
 }
 
 /* Media Query for Desktop */
