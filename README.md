@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- GitHub: [Add solution URL here](https://your-solution-url.com)
-- GitHub Pages: [https://drallas.github.io/Social-proof-section/](https://drallas.github.io/Social-proof-section/m)
+- GitHub: [https://github.com/Drallas/Social-proof-section](https://github.com/Drallas/Social-proof-section
+- GitHub Pages: [https://drallas.github.io/Social-proof-section/](https://drallas.github.io/Social-proof-section)
 
 ## My process
 
