@@ -18,6 +18,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Overview
 
+Coding Time : 8 hrs 36 mins
+
 ### The challenge
 
 Users should be able to:
