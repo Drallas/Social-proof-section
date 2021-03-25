@@ -14,7 +14,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -31,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- GitHub: [Add solution URL here](https://your-solution-url.com)
+- GitHub Pages: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -42,30 +41,35 @@ Users should be able to:
 - CSS Grid and Flexbox using BEM
 - Mobile First approach 
 
-Planning this project before building it, it seems fun to me, to make grid wrapper using flexbox in the bottom row for the card items. In my workflow i first built the mobile layout and responsive desktop as an outline. When those basic layouts where good, I moved on to adding the graphical details. 
+Planning this project before building it, it seems fun to me, to make grid wrapper using flexbox in the bottom row for the card items. In my workflow I first built the mobile layout and responsive desktop as an outline. When those basic layouts where good, I moved on to adding the graphical details. 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Still learning about grid, i learned to forget to specify grid-area values (otherwise weird things happens to the layout). I'm also 'forcing' myself this time not to use exact values but trying to rely on **fr** values.  
 
-To see how you can add code snippets, see below:
+My desktop grid :
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+```css
+  .grid {
+    grid-template-rows: 1.1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "grid__header grid__ratings"
+      "grid__cards grid__cards";
+    gap: 10px 15px;
+  }
+
 ```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I need to improve CSS naming and BEM naming too. I guess even i'm just starting out with **CSS Grid** that i'm already more comfortable with it than **CSS Flexbox** . This challenge also used Flexbox and it feels a bit like a Flexible (Black) Box, so i need to put extra effort improving my understaning of Flexbox. :) 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - To figure out flexbox properties. 
 
 ## Author
 
 - Frontend Mentor - [@Drallas](https://www.frontendmentor.io/profile/Drallas)
 - Dev.to - [@Drallas](https://dev.to/drallas)
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
