@@ -67,6 +67,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.05;
+  letter-spacing: 1.14px;
   color: var(--very-dark-magenta);
   margin: 0 0 1.4rem 0;
 }
@@ -77,7 +78,6 @@ body {
   letter-spacing: 0.5px;
   font-weight: 400;
   color: var(--dark-grayish-magenta);
-  text-align: center;
 }
 
 .grid__rating-card {
@@ -90,7 +90,7 @@ body {
   margin: 0 0 1rem 0;
 }
 
-.ratings__stars {
+.grid__ratings-stars {
   background-image: url(/images/icon-star.svg);
   background-repeat: repeat-x;
   margin: 0.875rem;
@@ -98,7 +98,7 @@ body {
   height: 18px;
 }
 
-.grid__rating-card p {
+.grid__ratings-text {
   font-size: 0.8125rem;
   font-weight: 700;
   color: var(--very-dark-magenta);
@@ -140,35 +140,79 @@ body {
   }
 
   .grid {
-    grid-template-columns: 535px 535px;
-    grid-template-rows: 266px 266px;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "grid__header grid__ratings"
       "grid__cards grid__cards";
-    gap: 20px 40px;
+    gap: 10px 15px;
   }
 
+  .grid__header {
+    grid-area: grid__header;
+    text-align: left;
+    max-width: 445px;
+  }
+
+  .grid__header h1 {
+    letter-spacing: 1.71px;
+    font-size: 3rem;
+  }
+
+  .grid__header p {
+    font-size: 0.9375rem;
+  }
+
+  /*  Ratings Section */
+  .grid__ratings {
+    grid-area: grid__ratings;
+    margin-top: 1.25rem;
+  }
+
+  .grid__rating-card {
+    flex-direction: row;
+    width: 445px;
+    height: 56px;
+  }
+  
   .ratings__rating-1 {
-    margin-left: 0;
+    margin-left: 10px;
   }
-
+  
   .ratings__rating-2 {
-    margin-left: 40px;
+    margin-left: 58px;
   }
-
+  
   .ratings__rating-3 {
-    margin-left: 80px;
+    margin-left: 106px;
+  }
+  
+  .grid__ratings-stars {
+    align-self: start;
+    margin: 1.1875rem 2rem ;
   }
 
-  .grid__cards {
-    display: flex;
-    width: 1110px;
-    justify-content: center;
+  .grid__ratings-text {
+    align-self: start;
+    
+    margin: 1.15625rem;
   }
-  .cards {
-    max-width: 350px;
-    max-height: 234px;
-    margin: 0 10px;
+
+
+  /* Cards Section */
+  .grid__cards {
+    grid-area: grid__cards;
+    display: flex;
+    justify-content: space-between;
+  }
+  .grid__rating-card {
+    grid-area: grid__cards;
+
+  }
+
+  .cards__item {
+    width: 350px;
+    height: 234px;
   }
 
   .cards__card-1 {
@@ -176,12 +220,13 @@ body {
   }
 
   .cards__card-2 {
-    margin-top: 50px;
+    margin-top: 1rem;
   }
 
   .cards__card-3 {
-    margin-top: 100px;
+    margin-top: 2rem;
   }
+
 }
 
 /* Footer */
