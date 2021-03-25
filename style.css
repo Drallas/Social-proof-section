@@ -156,8 +156,8 @@ body {
 @media (min-width: 69rem) {
   .wrapper {
     height: 100vh;
-    background-image: url(/images/bg-pattern-top-desktop.svg),
-      url(/images/bg-pattern-bottom-desktop.svg);
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
     background-position: left 0rem top 0rem, right 0rem bottom 0rem;
     background-repeat: no-repeat, no-repeat;
   }
