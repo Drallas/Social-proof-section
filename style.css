@@ -49,8 +49,8 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-image: url(/images/bg-pattern-top-mobile.svg),
-    url(/images/bg-pattern-bottom-mobile.svg);
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
   background-position: left 0rem top 0rem, right 0rem bottom 0rem;
   background-repeat: no-repeat, no-repeat;
   padding: 75px 24px 0 24px;
@@ -93,7 +93,7 @@ body {
 }
 
 .grid__ratings-stars {
-  background-image: url(/images/icon-star.svg);
+  background-image: url(images/icon-star.svg);
   background-repeat: repeat-x;
   margin: 0.875rem;
   width: 101px;
