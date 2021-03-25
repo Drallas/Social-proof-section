@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - GitHub: [Add solution URL here](https://your-solution-url.com)
-- GitHub Pages: [Add live site URL here](https://your-live-site-url.com)
+- GitHub Pages: [https://drallas.github.io/Social-proof-section/](https://drallas.github.io/Social-proof-section/m)
 
 ## My process
 
